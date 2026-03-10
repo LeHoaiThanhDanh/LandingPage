@@ -1,0 +1,1100 @@
+﻿/* Landing Page Styles */
+
+/* Main Content */
+.main-content {
+   /* Account for fixed header */
+}
+
+/* Container */
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.hero-header {
+  background: white;
+  padding: 60px 40px 40px;
+  text-align: center;
+}
+
+.hero-main-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #141B4D;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+
+.hero-subtitle {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  color: #9B7E52;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.hero-image {
+  width: 65%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 40px 60px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  color: white;
+}
+
+.hero-logo {
+  flex-shrink: 0;
+}
+
+.hero-text {
+  position: relative;
+}
+
+.hero-of {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  font-style: italic;
+  color: white;
+  display: block;
+  margin-bottom: -10px;
+  margin-left: 5px;
+}
+
+.hero-university {
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #E6B44D;
+  margin: 0;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.hero-economics {
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  margin: 5px 0 15px 0;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.hero-economics .gold {
+  color: #E6B44D;
+}
+
+.hero-economics .white {
+  color: white;
+}
+
+.hero-vnu {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 13px;
+  color: white;
+  font-weight: 500;
+  margin: 10px 0 8px 0;
+  letter-spacing: 1px;
+}
+
+.hero-address {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  max-width: 600px;
+}
+
+/* Discover Banner */
+.discover-banner {
+  background: #F05A22;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.discover-content h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 4px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #144E8C;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Programme Photos */
+.programme-photos {
+  padding: 60px 0;
+  background: #f5f5f5;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover img {
+  transform: scale(1.05);
+}
+
+.photo-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 20px 15px;
+  text-transform: uppercase;
+}
+
+/* Global Programme Section */
+.global-programme {
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+.programme-header {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 40px 0 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.programme-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  font-weight: 600;
+}
+
+.programme-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.app-period {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.period-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #141B4D;
+  margin: 0 0 5px 0;
+  letter-spacing: 0.5px;
+}
+
+.period-hours {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.apply-btn {
+  background: #F05A22;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.apply-btn:hover {
+  background: #d94d1a;
+}
+
+.session-dates {
+  padding: 0;
+  margin: 0;
+}
+
+.session-dates p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  color: #141B4D;
+  margin: 15px 0;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.early-bird {
+  background: #FFF5F0;
+  padding: 20px;
+  border-radius: 6px;
+  border-left: 4px solid #F05A22;
+  margin: 0;
+}
+
+.early-bird p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #333;
+  margin: 0;
+}
+
+.disclaimer {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #666;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.feature-item {
+  background: white;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+  margin-bottom: 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.feature-item p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #333;
+  margin: 0;
+}
+
+/* Why UEL Section */
+.why-uel {
+  padding: 80px 0;
+  background-image: url('images/uel-building.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.why-uel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(245, 245, 245, 0.6);
+  z-index: 1;
+}
+
+.why-uel .container {
+  position: relative;
+  z-index: 2;
+}
+
+.why-description {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+  max-width: 900px;
+  margin: 30px auto 50px;
+}
+
+.why-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.why-logos {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.circle-logo {
+  background: white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.circle-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.circle-text {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+.info-btn {
+  background: #F05A22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.info-btn:hover {
+  background: #d94d1a;
+}
+
+/* Courses Section */
+.courses-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.course-session {
+  background: #f5f5f5;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.course-session h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  color: #144E8C;
+  margin-bottom: 10px;
+}
+
+.session-date {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.course-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.track h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  color: #144E8C;
+  margin-bottom: 15px;
+}
+
+.course-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.course-item {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 15px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+}
+
+.course-item.economics {
+  background: #144E8C;
+}
+
+.course-item.business {
+  background: #1e5a9e;
+}
+
+.course-item.law {
+  background: #2d75bb;
+}
+
+.course-item.finance {
+  background: #3d8fd1;
+}
+
+.course-item.marketing {
+  background: #ff6b35;
+}
+
+.course-item.data {
+  background: #f57c42;
+}
+
+.course-item.innovation {
+  background: #ff8f5e;
+}
+
+.course-item.leadership {
+  background: #ffa376;
+}
+
+/* Template Section */
+.template-section {
+  padding: 80px 0;
+  background: #144E8C;
+  color: white;
+}
+
+.template-section .section-title {
+  color: white;
+}
+
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.template-item {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.template-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.template-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.template-item h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.template-item p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 400px;
+}
+
+.gallery-item.large {
+  grid-row: span 2;
+  height: 820px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 40px 30px;
+  color: white;
+}
+
+.gallery-overlay h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.gallery-overlay p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+}
+
+/* Perspectives Section */
+.perspectives-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.perspectives-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.perspective-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.perspective-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.perspective-item:hover img {
+  transform: scale(1.05);
+}
+
+.perspective-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(20, 78, 140, 0.95), rgba(20, 78, 140, 0.7));
+  padding: 30px;
+  color: white;
+}
+
+.perspective-content h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.perspective-content p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #ff6b35, #f57c42);
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 18px 50px;
+  background: #144E8C;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #0f3a6b;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .features-grid,
+  .template-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .programme-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px;
+  }
+  
+  .why-logos {
+    gap: 50px;
+  }
+  
+  .perspectives-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .gallery-item.large {
+    grid-column: span 2;
+    height: 400px;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .hero-header {
+    padding: 40px 20px 30px;
+  }
+  
+  .hero-main-title {
+    font-size: 24px;
+  }
+  
+  .hero-subtitle {
+    font-size: 14px;
+  }
+  
+  .hero-overlay {
+    padding: 30px 40px;
+  }
+  
+  .hero-content {
+    gap: 20px;
+  }
+  
+  .hero-logo svg {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .hero-university,
+  .hero-economics {
+    font-size: 28px;
+  }
+  
+  .hero-of {
+    font-size: 20px;
+  }
+  
+  .discover-content h3 {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+  
+  .photo-caption {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    padding: 15px 10px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+  }
+  
+  .why-description {
+    font-size: 13px;
+    max-width: 700px;
+  }
+  
+  .why-logos {
+    gap: 30px;
+  }
+  
+  .circle-logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .circle-logo img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .circle-text {
+    font-size: 13px;
+  }
+  
+  .info-btn {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+  
+  .programme-header {
+    padding: 30px 25px;
+  }
+  
+  .session-dates p {
+    font-size: 18px;
+    margin: 12px 0;
+  }
+  
+  .early-bird p {
+    font-size: 12px;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .photo-grid,
+  .template-grid,
+  .perspectives-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gallery-item.large {
+    grid-column: span 1;
+  }
+  
+  .cta-content h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-header {
+    padding: 30px 15px 20px;
+  }
+  
+  .hero-main-title {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .hero-subtitle {
+    font-size: 12px;
+  }
+  
+  .hero-image {
+    width: 90%;
+  }
+  
+  .hero-overlay {
+    padding: 20px;
+  }
+  
+  .hero-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hero-logo svg {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .hero-university,
+  .hero-economics {
+    font-size: 22px;
+  }
+  
+  .hero-of {
+    font-size: 18px;
+  }
+  
+  .hero-vnu {
+    font-size: 11px;
+  }
+  
+  .hero-address {
+    font-size: 9px;
+  }
+  
+  .discover-content h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  
+  .photo-caption {
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 12px 8px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .why-description {
+    font-size: 12px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .why-logos {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .circle-logo {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .circle-logo img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .circle-text {
+    font-size: 12px;
+  }
+  
+  .info-btn {
+    font-size: 10px;
+    padding: 8px 14px;
+  }
+  
+  .programme-header {
+    padding: 20px 15px;
+  }
+  
+  .period-label {
+    font-size: 12px;
+  }
+  
+  .period-hours {
+    font-size: 11px;
+  }
+  
+  .session-dates p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .early-bird {
+    padding: 15px;
+  }
+  
+  .early-bird p {
+    font-size: 11px;
+  }
+  
+  .disclaimer {
+    font-size: 10px;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .feature-item {
+    padding: 25px 20px;
+  }
+  
+  .feature-icon {
+    height: 50px;
+  }
+  
+  .feature-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .feature-item p {
+    font-size: 12px;
+  }
+  
+  .about-section,
+  .global-programme,
+  .why-uel,
+  .courses-section,
+  .template-section,
+  .gallery-section,
+  .perspectives-section {
+    padding: 50px 0;
+  }
+  
+  .cta-section {
+    padding: 60px 0;
+  }
+}

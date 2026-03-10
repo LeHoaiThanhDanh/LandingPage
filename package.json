@@ -1,0 +1,18 @@
+{
+  "name": "uel-study-camp-programme",
+  "version": "1.0.0",
+  "description": "Study Camp Programme (SCP) - University of Economics and Law Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "preview": "python -m http.server 8000"
+  },
+  "keywords": [
+    "landing-page",
+    "uel",
+    "study-camp",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT"
+}

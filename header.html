@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="components.css">
+
+<header class="header">
+  <div class="header-top">
+    <div class="header-accent"></div>
+    <div class="header-logos">
+      <img src="images/uel-logo.png" alt="UEL Logo" class="header-logo">
+      <img src="images/fis-logo.png" alt="FIS Logo" class="header-logo">
+    </div>
+    
+    <div class="header-title">
+      <span>Centre for Global Education</span>
+      <span>and Opportunities</span>
+    </div>
+    
+    <button class="menu-toggle" id="menuToggle">
+      <span>Menu</span>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </div>
+  
+  <nav class="header-nav" id="headerNav">
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#study-smu">Study in SMU</a></li>
+      <li><a href="#admissions">Admissions</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  // Mobile menu toggle functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const headerNav = document.getElementById('headerNav');
+    
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        headerNav.classList.toggle('active');
+      });
+    }
+    
+    // Close mobile menu when clicking on a link
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        if (window.innerWidth <= 768) {
+          menuToggle.classList.remove('active');
+          headerNav.classList.remove('active');
+        }
+      });
+    });
+    
+    // Close mobile menu when window is resized to desktop
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+        menuToggle.classList.remove('active');
+        headerNav.classList.remove('active');
+      }
+    });
+  });
+</script>

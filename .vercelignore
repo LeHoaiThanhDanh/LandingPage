@@ -1,0 +1,19 @@
+# Files and directories to ignore during Vercel deployment
+
+# Backup files
+*.backup.*
+index.backup.html
+
+# Demo files
+demo.html
+
+# Development files
+README.md
+
+# Git files
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
