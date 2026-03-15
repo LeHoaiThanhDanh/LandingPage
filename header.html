@@ -33,38 +33,23 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-</header>
 
-<script>
-  // Mobile menu toggle functionality
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const headerNav = document.getElementById('headerNav');
-    
-    if (menuToggle) {
-      menuToggle.addEventListener('click', function() {
-        this.classList.toggle('active');
-        headerNav.classList.toggle('active');
-      });
-    }
-    
-    // Close mobile menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        if (window.innerWidth <= 768) {
-          menuToggle.classList.remove('active');
-          headerNav.classList.remove('active');
-        }
-      });
-    });
-    
-    // Close mobile menu when window is resized to desktop
-    window.addEventListener('resize', function() {
-      if (window.innerWidth > 768) {
-        menuToggle.classList.remove('active');
-        headerNav.classList.remove('active');
-      }
-    });
-  });
-</script>
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true">
+    <div class="mobile-nav-panel" role="dialog" aria-label="Main menu">
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="mobile-nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#study-smu">Study In SMU <span class="mobile-nav-arrow">⌄</span></a></li>
+        <li><a href="#study-abroad">Study Abroad <span class="mobile-nav-arrow">⌄</span></a></li>
+        <li><a href="#local-exchange">Local Exchange <span class="mobile-nav-arrow">⌄</span></a></li>
+        <li><a href="#partner-universities">Partner Universities</a></li>
+        <li><a href="#financing">Financing</a></li>
+        <li><a href="#contact-geo">Contact GEO</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
