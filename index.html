@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Study Camp Programme (SCP) - Centre for Global Education and Opportunities</title>
+  <link rel="icon" type="image/png" href="images/fis-logo.png">
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="components.css">
@@ -661,6 +662,10 @@
       if (!header) return; // Exit if header not found
       
       window.addEventListener('scroll', function() {
+        if (header.classList.contains('menu-open')) {
+          return;
+        }
+
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
         
         // Don't hide header at the very top of the page
@@ -773,10 +778,13 @@
       const mobileOverlay = document.getElementById('mobileNavOverlay');
       const closeBtn = document.getElementById('mobileNavClose');
       const menuLinks = document.querySelectorAll('.mobile-nav-list a');
+      const header = document.querySelector('.header');
 
-      if (!menuToggle || !mobileOverlay || !closeBtn) return;
+      if (!menuToggle || !mobileOverlay || !closeBtn || !header) return;
 
       function openMenu() {
+        header.classList.add('menu-open');
+        header.classList.remove('header-hidden');
         mobileOverlay.classList.add('active');
         mobileOverlay.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
@@ -785,6 +793,7 @@
       function closeMenu() {
         mobileOverlay.classList.remove('active');
         mobileOverlay.setAttribute('aria-hidden', 'true');
+        header.classList.remove('menu-open');
         document.body.style.overflow = '';
       }
 
